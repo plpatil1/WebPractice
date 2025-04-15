@@ -1,62 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" class="main">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./task2.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Left Nav with Sections</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <header class="header1">
-       <img class="img1" src="./assets/images/devops.jfif" alt="">
-        <br><br>
-        <nav class="nav1">
-                <a href="#Chapter1" ><b> Chapter1</b></a> <br><br><br>
-                <a href="#Chapter2" ><b> Chapter2</b></a> <br><br><br>
-                <a href="#Chapter3" ><b> Chapter3</b></a> <br><br><br>
-                <a href="#Chapter4" ><b> Chapter4</b></a> <br><br><br>
-                <a href="#Chapter5"><b> Chapter5</b></a> <br><br><br>
-                <a href="#Chapter6" ><b> Chapter6</b></a> <br><br><br>
-                <a href="#Chapter7" ><b> Chapter7</b></a>  <br><br><br>
-                <a href="#Chapter8" ><b> Chapter8</b></a> <br><br><br>
-                <a href="#Chapter9" ><b> Chapter9</b></a> <br><br><br>
-                <a href="#Chapter10" ><b> Chapter10</b></a> <br><br><br>
+    body {
+      display: flex;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
 
-        </nav>
-    </header>
+    nav {
+      width: 20%;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
 
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 15px 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      width: 80%;
+      padding: 20px;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      margin-bottom: 60px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-<body class="body1">
-    <section id="Chapter1" >
-        <h1>Chapter 1 </h1>
-        <img src="./assets/images/instagrame.jfif" alt="instagramImage">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium repudiandae dolore sapiente et perspiciatis culpa aliquid facilis, quibusdam magni nisi, asperiores id enim molestias vel dolorum? Ipsa, debitis vitae.
-            Accusantium quisquam hic fuga repellendus eius, quidem possimus nesciunt ratione cupiditate sint eligendi exercitationem modi quibusdam eos, sed repudiandae dolores odit magni suscipit, omnis nihil voluptatum. Earum ipsa voluptate autem?
-            Voluptas soluta sapiente in asperiores temporibus quibusdam? Obcaecati nisi earum a numquam! Accusantium omnis officiis, dolorum molestias et voluptatum natus maxime explicabo. Voluptatibus placeat saepe, eum illo enim in obcaecati?
-            Animi accusamus dolorem magni sunt quam nesciunt totam vel neque voluptas doloribus minus laborum expedita velit aperiam quasi voluptatem dolor veniam rem a, labore fuga eius placeat est. Dolores, incidunt.
-            Saepe adipisci minima nulla delectus iste itaque, sequi eum nesciunt illo aut repudiandae molestiae laboriosam? Iure omnis temporibus sint molestiae minima vitae sunt nobis reiciendis praesentium dolores veritatis, laudantium perspiciatis.
-            Rem modi fugit excepturi odio, ducimus ut voluptate saepe delectus? Ad, nostrum voluptatem. Quos aliquam esse similique molestiae iusto fugit numquam vitae consectetur quasi alias, magnam quis natus. Molestias, sint.
-            Cumque expedita quisquam, deserunt rem, sit officia ad nostrum optio tempora magnam ipsum praesentium voluptates. Earum, doloremque. Necessitatibus sunt, neque magnam ipsum repudiandae omnis, voluptatibus obcaecati molestias doloremque temporibus eveniet.
-            Culpa enim reprehenderit iste dolorem repudiandae, nihil tenetur nesciunt est, tempore eius omnis hic inventore sint ab exercitationem vel esse odio voluptate aliquid quasi sit laudantium. Fuga earum esse in.
-            Vel consequuntur quos veniam, adipisci deleniti voluptate assumenda omnis incidunt, quas, ratione expedita voluptates voluptatem delectus voluptatibus maxime earum inventore unde! Recusandae nemo cupiditate sequi aspernatur fuga totam, dignissimos molestiae.
-            Ea repudiandae laborum rem fuga id illum nesciunt, sint ut eius quia explicabo amet in tenetur perspiciatis! Obcaecati, similique! In totam ad reiciendis quisquam veniam consequuntur quaerat tempore. Dignissimos, ut!
-            Natus, ullam consequatur non modi odit animi, quae nisi minus illum eligendi unde architecto tenetur nostrum praesentium at voluptas? Eligendi perspiciatis, sunt enim ratione iusto similique laboriosam ex cumque provident.
-            Dolores impedit velit quidem blanditiis sapiente nihil voluptate explicabo odio autem ad ratione vel reprehenderit facilis et voluptatum quas earum dolorum corrupti tempora nostrum, necessitatibus omnis, quibusdam nemo. Culpa, quibusdam.
-            Assumenda odio id minus voluptatibus incidunt inventore, commodi earum distinctio libero, possimus fugiat eligendi corrupti reprehenderit perferendis minima similique aliquam? Laudantium maiores asperiores assumenda perferendis fugiat aut quidem, molestiae possimus.
-            Accusantium officiis deserunt eligendi dignissimos a iste ipsam, dolorum consequuntur dicta assumenda nemo minus sint perspiciatis numquam amet. Id nobis eveniet quis consequatur mollitia, cupiditate dolore accusantium fuga officia molestias!
-            Laboriosam aliquid officiis animi sunt ad natus nemo repellendus distinctio omnis unde explicabo alias inventore nisi architecto, maiores nulla obcaecati est corporis molestias quidem eius. Fuga suscipit magnam ea rerum.
-            Quos eligendi voluptatum aperiam, necessitatibus pariatur quo incidunt quas impedit nesciunt quaerat aliquid eaque aut vitae accusantium fuga veritatis, amet molestias numquam nihil accusamus totam nobis deserunt repudiandae mollitia. Velit.
-            Unde dolorem ducimus temporibus quo necessitatibus quos aperiam eveniet ad explicabo perferendis modi natus ex, praesentium enim nihil impedit rerum ipsum a sit earum dicta deleniti, animi nisi. Culpa, nemo!
-            Officia possimus necessitatibus, assumenda accusamus ab corporis recusandae dolores fugiat aut obcaecati deserunt amet veniam repellat eligendi! Laboriosam distinctio dolor possimus, ex, nulla nesciunt in cupiditate exercitationem eligendi, voluptatibus ea.
-            Natus, quod adipisci ad, porro unde laboriosam at fugit maiores incidunt autem totam officia eius vel doloribus repudiandae officiis doloremque veniam sequi error? Aperiam consequuntur exercitationem quasi nam neque! Libero!
-            Quos impedit modi, architecto, atque autem accusamus id totam culpa doloremque qui molestias, assumenda repellendus nam in doloribus? Repellendus, quod delectus? Cumque sint optio nihil quaerat animi doloribus, debitis repellat?
-            Eos ipsam velit maxime deserunt nam. Magni explicabo consectetur consequatur sit? Ullam inventore praesentium quidem perspiciatis ad accusantium, natus nulla distinctio aperiam error eligendi reprehenderit odit, autem esse exercitationem assumenda.
-            Esse dignissimos dolores, a ea quidem dolor nesciunt impedit velit, non unde mollitia, officiis possimus in facilis. Omnis eligendi quis hic neque dolor labore suscipit accusantium quas, rem inventore quisquam?
-            Qui delectus omnis, at earum maiores, esse ipsa quae placeat impedit dolor excepturi rerum, sed saepe odit vitae aut quod quidem ipsam consequuntur nisi nobis consectetur officiis! Reiciendis, quia itaque.
-            Aliquid minima at, cumque quisquam similique libero porro iusto eius fuga velit? Blanditiis reiciendis voluptas natus placeat, enim velit consequuntur ad doloribus expedita, debitis nemo sit non cum sapiente quia!
-            Enim incidunt ipsam nobis rerum temporibus eos debitis magnam, asperiores eius nihil minima suscipit quibusdam animi maxime perspiciatis adipisci quas, voluptatum id dolorem exercitationem facere! Adipisci obcaecati hic et rem?
-        </p>
+<body>
+
+  <!-- Left Navigation -->
+  <nav>
+    <link rel="logo" href="../Day02/assets/">
+    <ul>
+      <li><a href="#chapter1">Chapter 1</a></li>
+      <li><a href="#chapter2">Chapter 2</a></li>
+      <li><a href="#chapter3">Chapter 3</a></li>
+      <li><a href="#chapter4">Chapter 4</a></li>
+      <li><a href="#chapter5">Chapter 5</a></li>
+      <li><a href="#chapter6">Chapter 6</a></li>
+      <li><a href="#chapter7">Chapter 7</a></li>
+      <li><a href="#chapter8">Chapter 8</a></li>
+      <li><a href="#chapter9">Chapter 9</a></li>
+      <li><a href="#chapter10">Chapter 10</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="chapter1">
+      <h2>Chapter 1: Introduction</h2>
+      <p>Content of Chapter 1 goes here...</p>
     </section>
-    
+    <section id="chapter2">
+      <h2>Chapter 2: Basics</h2>
+      <p>Content of Chapter 2 goes here...</p>
+    </section>
+    <section id="chapter3">
+      <h2>Chapter 3: Intermediate</h2>
+      <p>Content of Chapter 3 goes here...</p>
+    </section>
+    <section id="chapter4">
+      <h2>Chapter 4: Advanced Topics</h2>
+      <p>Content of Chapter 4 goes here...</p>
+    </section>
+    <section id="chapter5">
+      <h2>Chapter 5: Use Cases</h2>
+      <p>Content of Chapter 5 goes here...</p>
+    </section>
+    <section id="chapter6">
+      <h2>Chapter 6: Real World Applications</h2>
+      <p>Content of Chapter 6 goes here...</p>
+    </section>
+    <section id="chapter7">
+      <h2>Chapter 7: Project Work</h2>
+      <p>Content of Chapter 7 goes here...</p>
+    </section>
+    <section id="chapter8">
+      <h2>Chapter 8: Testing</h2>
+      <p>Content of Chapter 8 goes here...</p>
+    </section>
+    <section id="chapter9">
+      <h2>Chapter 9: Deployment</h2>
+      <p>Content of Chapter 9 goes here...</p>
+    </section>
+    <section id="chapter10">
+      <h2>Chapter 10: Conclusion</h2>
+      <p>Content of Chapter 10 goes here...</p>
+    </section>
+  </main>
+
 </body>
 </html>
+
