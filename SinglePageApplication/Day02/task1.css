@@ -1,0 +1,30 @@
+.cl1{
+    border: 5px solid black;
+    width: 800px;
+    height: 400px;
+    background-color: antiquewhite;
+}
+.LT1{
+    position: relative;
+    top: 0px;
+}
+.RT1{
+    position: relative;
+    left: 730px;
+    top: -15px;
+}
+.C1{
+    position: relative;
+    left: 365px;
+    top: 165px;
+}
+.LB1{
+    position: relative;
+    left: 1px;
+    top: 332px;
+}
+.RB1{
+    position: relative;
+    left: 705px;
+    top: 315px;
+}
