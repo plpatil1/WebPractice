@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Array of Object
+
+        let products = [
+              {pid:101, pname:"Laptop", pprice:55000, pquantity:20, pavaible: true},
+              {pid:102, pname:"Mouse", pprice:2000, pquantity:40, pavaible: false},
+              {pid:103, pname:"KeyBoard", pprice:2500, pquantity:100, pavaible: true},
+              {pid:104, pname:"Adptor", pprice:300, pquantity:50, pavaible: false},
+              {pid:105, pname:"USB", pprice:100, pquantity:100, pavaible: true},
+        ];
+   
+         for(let p of products){
+            document.write(`Id : ${p.pid}, Name : ${p.pname}, Price : ${p.pprice}, Quantity : ${p.pquantity}, Available : ${p.pavaible} <br>`);
+         }
+
+         document.write(`<br>==================================================================<br><br>`);
+         document.write(`<br> Available in Stocks :- <br>`);
+         document.write(`<br>==================================================================<br>`);
+         for(let p of products){
+            if(p.pavaible) {
+                document.write(`Id : ${p.pid}, Name : ${p.pname}, Price : ${p.pprice}, Quantity : ${p.pquantity}, Available : ${p.pavaible} <br>`);
+            }
+         }
+
+   
+   </script>
+</body>
+</html>
