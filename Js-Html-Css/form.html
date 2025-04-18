@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- external css  -->
+    <link rel="stylesheet" href="../JavaScript/form.css">
+
+    <!-- external js  -->
+    <script src="../JavaScript/validation.js"></script>
+
+</head>
+<body>
+    <form class="box" name="myform" onsubmit="return checkAll()">
+        <label for="fname" class="for-label">Enter Your FullName: </label>
+        <input type="text" name="fname" id="fname" class="form-control">
+    
+        <label for="" class="for-label">Select Your Qualifications</label>
+        <input type="checkbox" name="edu" value="ssc" id="ssc">SSc 
+        <input type="checkbox" name="edu" value="hsc" id="hsc">HSc 
+        <input type="checkbox" name="edu" value="ug" id="ssc">UG
+        <input type="checkbox" name="edu" value="pg" id="ssc">PG
+
+        <button type="submit" class="btn btn-outline-primary mt-3" onclick="">submit</button>
+    </form>
+</body>
+</html>

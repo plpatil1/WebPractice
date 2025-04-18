@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let student = {
+            id:101, name:"Pawan", contact: 9156, single:true,
+            address: {
+                city:"Chatrpati Sambhajinagar",
+                pin:433102,
+                state: "Maharashtra"
+            },
+            details: function(){
+                return `Id : ${this.id}  Name: ${this.name}  Single : ${this.single}`;
+            }
+
+        };
+        document.write(` <b> Id </b> : ${student.id}  <b> Name </b>: ${student.name}  <b> Single </b> : ${student.single} <br>`);
+
+        document.write(`  <b> City </b> : ${student.address.city} <b> Pincode </b> : ${student.address.pin}  <b> State </b> : ${student.address.state} <br>`);
+
+        document.write(student.details());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // use of trim()
+        let msg = "Hello Cdac Bhau!                              ";
+        document.write(msg);
+        console.log(msg);
+        console.log(msg.trim());
+        console.log(msg.trimStart());
+        console.log(msg.trimEnd());
+
+        let lunch = ["Birnay", "Palak Paneer", "Dal Tadka", "Chicken-65", "Veg-Kolhapuri"];
+
+        // 1.forEach(); : it call another method once for eacch array element. (Array Method ).
+
+        lunch.forEach((val, index) => {
+            console.log(val);
+            document.write(`${val}`);
+        });
+
+        "use strict";
+        document.write(` <br>===================== <br> `);
+
+        // 2.map(); : -- it call another method once for each array element and it will return new array after performing manipulation with array data.
+
+        let num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        document.write(num);
+  
+        document.write(` <br>`);
+
+        let mapout = num.map((val,index)=>{
+            return val*2;
+        });
+        document.write(mapout);
+
+        // 3.filter(); : -- it call another method once for each array element and its will return new array of those element who satisfy given.
+
+        let filterout = num.filter((val,index)=>{
+         return val%2==0;
+        });
+        document.write(` <br>`);
+        document.write(filterout);
+        document.write(` <br>`);
+        // 4.every(); : -- it call another method once for each array element and it will return true value if element satisfy given condition.
+
+        let everyOut = num.every((val,index)=>{
+         return val > 1;
+        });
+        document.write(everyOut);
+    //    5. some(); : -- it call another method once for each array element and it will return true value if some of array elements  satisfy given condition
+
+    let someOut = num.some((val,index)=> {
+        return val > 18;
+    });
+    document.write(` <br>`);
+    document.write(someOut);
+
+    </script>
+</body>
+
+</html>

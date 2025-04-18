@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="d1"></div>
+   <div id="d2"></div>
+   <div id="d3"></div>
+   <div id="d4"></div>
+   <div id="d5"></div>
+   <div id="d6"></div>
+   <div id="d7"></div>
+   <div id="d8"></div>
+   <div id="d9"></div>
+   <div id="d10"></div>
+   <div id="d11"></div>
+   <div id="d12"></div> 
+   <div id="d13"></div> 
+   <div id="d14"></div> 
+   <div id="d15"></div> 
+   <div id="d16"></div> 
+   <div id="d17"></div> 
+   <div id="d18"></div> 
+   <div id="d19"></div> 
+   <div id="d20"></div> 
+   <div id="d21"></div> 
+   <div id="d22"></div> 
+   <div id="d23"></div> 
+   <div id="d24"></div> 
+</body>
+<script>
+
+    let msg = " All of us are Infoway Student, All Infoway under Cdac Acts Pune!";
+
+    document.getElementById("d1").innerHTML = msg;
+    document.getElementById("d2").innerHTML = `Length  : ${msg.length}`;
+    document.getElementById("d3").innerHTML = msg.indexOf("All");
+    document.getElementById("d4").innerHTML = msg.indexOf("All", 7);
+    document.getElementById("d5").innerHTML = msg.indexOf("good");
+
+    document.getElementById("d6").innerHTML = msg.indexOf("Infoway",);    
+    document.getElementById("d7").innerHTML = msg.lastIndexOf("Infoway",21); 
+
+    // 3. search
+    
+    //4. slice(startIndex, endIndex);
+    document.getElementById("d9").innerHTML = msg.slice(5,10);    
+    document.getElementById("d10").innerHTML = msg.slice(-20);    
+    
+    document.getElementById("d11").innerHTML = msg.slice(-21,-16);    
+    document.getElementById("d11").innerHTML = msg.slice(-21,-16);  
+
+    // 5. subString(startIndex, endIndex);
+   document.getElementById("d12").innerHTML = msg.substring(20);
+   document.getElementById("d13").innerHTML = msg.substring(0, 20);
+
+     //6. substr(startIndex, total-number-character);
+     document.getElementById("d14").innerHTML = msg.substr(5); 
+     document.getElementById("d15").innerHTML = msg.substr(10,13);
+     
+    //  7.replace(oldString, newString);  : it is use to 
+    document.getElementById("d16").innerHTML = msg.replace("Infoway", "PG_DAC");
+    document.getElementById("d17").innerHTML = msg.replace(/Infoway/g, "PG_DAC");
+    document.getElementById("d18").innerHTML = msg.replace(/Infoway/ig, "PG_DAC");
+
+    document.getElementById("d18").innerHTML = msg.replaceAll("Infoway", "PG_DAC");
+
+    // split(seperator): it is use to convert string into array.
+    console.log(msg.split());
+    console.log(msg.split("a"));
+
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        document.writeln(`<br>===================================================== <br> <br>`);
+        document.writeln(`<br> <h2>  Array with for loop </h2> <br> <br>`);
+        let breakfast = ["Poha", "Dosa", "Idali", "Upma", "Vada", "Tea", "Coffee"];
+        for(let i=0; i<breakfast.length; i++){
+              document.write(`${breakfast[i]}  <br>`);
+            }
+            
+            document.writeln(`<br>===================================================== <br> <br>`);
+            document.writeln(`<br> Array using for of loop <br> <br>`);
+        // for of : it is use to display array data
+        for(let b of breakfast){
+            document.write(`${b} <br>`);
+        }
+        
+        document.writeln(`<br>===================================================== <br> <br>`);
+        // for in : it is use to display arrray index
+
+        for(let indexx in breakfast){
+            document.write(`${indexx}  <br>`);
+        }
+
+
+    </script>
+</body>
+</html>
