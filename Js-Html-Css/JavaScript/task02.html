@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(106, 25, 182);
+        }
+
+        .box {
+            border: 5px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            align-items: center;
+            justify-content: center;
+            background-color: #145b77d3;
+
+        }
+
+        .box:hover {
+            background-color: rgba(160, 11, 160, 0.37);
+            border: 5px solid rgba(131, 119, 196, 0.521);
+            transform: scale(1.5);
+            box-shadow: 0 0 180px rgb(9, 3, 66);
+            color: rgba(133, 46, 86, 0.76);
+        }
+
+        #d2 {
+            position: fixed;
+            background: #6b6d6b;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="box" name="d1" id="d1"> </div>
+    <h1 id="d2">__:__:__</h1>
+
+
+    <script>
+        function myClock() {
+            let time = new Date();
+            document.getElementById("d2").innerHTML = time.toLocaleTimeString();
+        }
+        setInterval(myClock, 1000);
+    </script>
+
+</body>
+
+</html>
