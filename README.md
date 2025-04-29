@@ -9,8 +9,7 @@ Forms: <form>, <input>, <textarea>, <select>, type attributes
 Semantic Tags: <header>, <footer>, <article>, <section>, <main>, <nav>
 
 
-
-## 🎨 2. CSS (Cascading Style Sheets)
+##   🎨 2. CSS (Cascading Style Sheets)
 
 Selectors: element, .class, #id, attribute selectors
 
